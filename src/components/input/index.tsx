@@ -32,7 +32,7 @@ export const Input: FunctionComponent<{
       <InputArea>
         {Icon && (
           <IconContainer>
-            <Icon width="24" height="24" fill="#00ff55" />
+            <Icon width="16" height="16" fill="rgba(0,0,0,0.45)" />
           </IconContainer>
         )}
         <TextInput
