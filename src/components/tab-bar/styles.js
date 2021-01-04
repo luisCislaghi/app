@@ -3,9 +3,8 @@ import styled from "styled-components/native";
 
 export const TabArea = styled.View`
   display: flex;
-  // borda nao funciona\
-  /* border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #d9d9d9; */
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
   height: 60px;
 `;
