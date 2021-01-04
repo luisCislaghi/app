@@ -5,6 +5,8 @@ import { ButtonContainer } from "../styles";
 import * as Yup from "yup";
 import { Button } from "../../../components/button";
 import * as RootNavigation from "../../../utils/RootNavigation";
+import EmailIcon from "../../../assets/icons/email.svg";
+import KeyIcon from "../../../assets/icons/key.svg";
 
 const submit = (values: any) => {
   RootNavigation.navigate("MainTab");
@@ -13,8 +15,14 @@ const submit = (values: any) => {
 const Form = (props) => {
   return (
     <>
-      <Input name="email" props={props} placeholder="E-mail" />
-      <Input name="password" props={props} password placeholder="Senha" />
+      <Input name="email" props={props} placeholder="E-mail" Icon={EmailIcon} />
+      <Input
+        name="password"
+        props={props}
+        password
+        placeholder="Senha"
+        Icon={KeyIcon}
+      />
       <ButtonContainer>
         <Button onPress={props.handleSubmit} text="Entrar" />
       </ButtonContainer>
